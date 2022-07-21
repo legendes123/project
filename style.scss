@@ -1,10 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300&display=swap');
+
 .wrapper {
-    position: absolute;
-    height: 2000px;
     width: 99%;
     .header {
         position: relative;
-        height: 10%;
         .wrapper-header {
             display: inline-block;
             height: 100%;
@@ -27,7 +26,7 @@
                         font-family: "Montserrat";
                         font-style: normal;
                         font-weight: bold;
-                        font-size: 24px;
+                        font-size: calc(1em + 0.5vw);
                         line-height: 30px;
                         text-transform: uppercase;
                         color: #24173D;
@@ -42,6 +41,7 @@
                     background: #3B393C;
                 }
                 .number{
+                    width: 60%;
                     display: flex;
                     justify-content: center;
                     margin: 0 50px;
@@ -52,7 +52,7 @@
                         font-family: "Montserrat";
                         font-style: normal;
                         font-weight: bold;
-                        font-size: 24px;
+                        font-size: calc(0.7em + 0.5vw);
                         line-height: 29px;
                         text-align: center;
                         color: #24173D;
@@ -60,8 +60,8 @@
                   }
                   .number-call{
 
-                    width: 250px;
-                    height: 50px;
+                    width: 40%;
+                    height: 25%;
                     margin: 10px 0;
                   
                     background: #FFC633;
@@ -76,7 +76,7 @@
                     font-family: 'Open Sans';
                     font-style: normal;
                     font-weight: bold;
-                    font-size: 21px;
+                    font-size: calc(0.7em + 0.5vw);
                     line-height: 25px;
                     text-align: center;
                     color: #000000;
@@ -92,42 +92,50 @@
         }   
     }
     .content{
+        height: 600px;
         position: relative;
-        height: 30%;
         display: flex;
         background: url('img/image\ 1.png') 0 0/1910px 525px no-repeat;
         .content-left {
             height: 75%;
             width: 50%;
+            hr{
+                width: 40%;
+                margin: 0 15%;
+            }
             .left-text {
                 width: 80%;
                 height: 50%;
                 font-family: "Montserrat";
                 font-style: normal;
-                font-size: 30px;
+                
                 line-height: 70px;
                 text-transform: uppercase;
                 margin: 0 auto;
                 color: #FFFFFF;
                 overflow: hidden;
+                
                 .left-text-dop {
+                    height: 30%;
                     font-weight: bold;
-                    font-size: 60px;
+                    font-size: calc(1.5em + 0.5vw);
                 }
                 .left-text-content {
-                    margin: -40px 0;
+                    height: 40%;
+
+                    font-size: calc(1em + 0.5vw);
                 }
             }
             .left-text-under {
                 font-family: "Montserrat";
                 font-style: normal;
-                font-size: 30px;
+                font-size: calc(1em + 0.5vw);
                 width: 80%;
                 color: #FFFFFF;
                 margin: 15px auto;
                 .left-text-dop {
                     font-weight: bold;
-                    font-size: 60px;
+                    font-size: calc(1.5em + 0.5vw);
                 }
             }
         }
@@ -136,10 +144,10 @@
             width: 690px;
             height: 300px;
             margin: auto auto;
+            white-space: nowrap;
             
             background: #FFC633;
             box-shadow: 10px 25px 45px rgba(0, 0, 0, 0.15);
-            backdrop-filter: blur(10px);
             
             border-radius: 30px;
             .right-text {
@@ -149,7 +157,7 @@
                 font-family: "Montserrat";
                 font-style: normal;
                 font-weight: 800;
-                font-size: 47px;
+                font-size: calc(2em + 0.5vw);
                 letter-spacing: 0.1em;
                 text-transform: uppercase;
                 color: #24173D;
@@ -160,15 +168,14 @@
             .right-form {
                 text-align: center;
                 input {
-                    width: 235px;
-                    height: 33px;
+                    width: 30%;
+                    height: 40%;
                     background: #FFFFFF;
                     border-radius: 5px;
                     border: #FFFFFF;
-                    font-family: "Montserrat";
                     font-style: normal;
                     font-weight: 200;
-                    font-size: 19px;
+                    font-size: calc(0.7em + 0.5vw);
                     line-height: 23px;
                     color: #5C5C5C;
                 }
@@ -177,6 +184,7 @@
                 width: 235px;
                 height: 32px;
                 margin: 10px auto;
+                color: white;
                 .right-text-under{
   
                     width: 100%;
@@ -200,7 +208,7 @@
     }
 
     .advantage {
-        height: 85%;
+        height: 1600px;
         width: 99%;
         position: relative;
         .advantage-text {
@@ -209,7 +217,7 @@
         }
         .advantage-main {
             box-sizing: border-box;
-            margin: 0 auto;
+            margin: 5% auto;
             border: thick double #030303;
             border-radius: 20px;
             height: 20%;
@@ -226,17 +234,19 @@
                     height: 100%;
                     width: 33%;
                     img {
-                        width: 100px;
-                        height: 100px;
+                        min-width: 50%;
+                        height: 50%;
+                        margin: auto;
                     }
                     p {
                         font-family: "Montserrat";
                         font-style: normal;
-                        font-weight: 300;
-                        font-size: 25px;
+                        font-weight: 700;
+                        font-size: calc(0.6em + 0.5vw);
                         line-height: 29px;
                         letter-spacing: 0.05em;
                         color: #24173D;
+                        margin: auto;
                     }
                 }
                 
@@ -246,7 +256,7 @@
             width: 100%;
             height: 50%;
             .property-flex{
-                height: 45%;
+                height: 37%;
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
@@ -254,12 +264,15 @@
                     position: relative;
                     height: 100%;
                     width: 33.3%;
+                    .property-container-p{
+                        margin: 10% auto;
+                        width: 70%;
+                        height: 30%;
+                    }
                     p {
-                        position: absolute;
                         bottom: 0;
                         left: 0;
                         right: 0;
-                        margin: 100px 250px;
                         font-family: "Montserrat";
                         font-style: normal;
                         font-weight: 600;
@@ -270,20 +283,19 @@
                         color: #FFFFFF;
                     }
                     .button-property {
-                        width: 250px;
-                        height: 50px;
-                        margin: 10px 0;
+                        width: 70%;
+                        height: 15%;
+                        margin: 0 15%;
                         background: #FFC633;
                         border-radius: 30px;
                         -webkit-box-align: center;
                         -ms-flex-align: center;
                         align-items: center;
                         border: 0;
-                        margin: 10px auto;
                         font-family: "Open Sans";
                         font-style: normal;
                         font-weight: bold;
-                        font-size: 21px;
+                        font-size: calc(0.7em + 0.5vw);
                         line-height: 25px;
                         text-align: center;
                         color: #000000;
@@ -295,14 +307,31 @@
                         order: 0;
                         -ms-flex-positive: 0;
                         flex-grow: 0;
-                        position: absolute;
                         bottom: 0;
                         left: 0;
                         right: 0;
                     }
+                   
                     &.dop{
+                        margin: 0 5px;
                         width: 49.99%;
-                        
+                        background: url(img/Rectangle\ 159.png) 0 0/100% auto no-repeat;
+                        .property-container-p{
+                            height: 15%;
+                        }
+                        .button-property{
+                            margin: 0 15%;
+                        }
+                    }
+                    &.dop2{
+                        width: 49.99%;
+                        background: url(img/Rectangle\ 160.png) 0 0/100% auto no-repeat;
+                        .property-container-p{
+                            height: 15%;
+                        }
+                        .button-property{
+                            margin: 0 15%;
+                        }
                     } 
                 }
                 
@@ -327,7 +356,7 @@
                         font-family: "Montserrat";
                         font-style: normal;
                         font-weight: 900;
-                        font-size: 44px;
+                        font-size: calc(2.5em + 0.5vw);
                         line-height: 77px;
                         text-transform: uppercase;
                         color: #24173D;
@@ -361,7 +390,7 @@
                                 font-family: "Montserrat";
                                 font-style: normal;
                                 font-weight: 600;
-                                font-size: 18px;
+                                font-size: calc(0.5em + 0.5vw);
                                 line-height: 22px;
                                 text-align: center;
                                 text-transform: uppercase;
@@ -374,7 +403,7 @@
                                 font-family: "Montserrat";
                                 font-style: normal;
                                 font-weight: 800;
-                                font-size: 30px;
+                                font-size: calc(1.5em + 0.5vw);
                                 line-height: 37px;
                                 color: #24173D;
                                 text-align: center;
@@ -385,7 +414,7 @@
                                 font-family: "Montserrat";
                                 font-style: normal;
                                 font-weight: 600;
-                                font-size: 18px;
+                                font-size: calc(0.5em + 0.5vw);
                                 line-height: 22px;
                                 text-align: center;
                                 text-transform: uppercase;
@@ -399,10 +428,10 @@
     }
     .footer {
         width: 100%;
-        height: 30%;
         .footer-main {
-            height: 50%;
+            height: 420px;
             width: 100%;
+            background: url(img/backg.png) 0 0/2400px 190% no-repeat;
             .footer-text {
                 height: 50%;
                 margin: 0 auto;
@@ -410,27 +439,31 @@
                     font-family: "Montserrat";
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 70px;
+                    font-size: calc(2.5em + 0.5vw);
                     text-align: center;
                     color: #FFFFFF;
                 }
             }
             .footer-input {
+                width: 50%;
                 height: 30%;
                 display: inline-flex;
-                margin: 40px 320px;
+                margin: 3% 25%;
                 input {
+                    height: 40%;
                     background: #FFFFFF;
                     border-radius: 5px;
-                    width: 385px;
-                    height: 57px;
+                    width: 35%;
                     border: 0;
                     color: grey;
                     margin: 0 20px;
+                    font-size: calc(0.4em + 0.5vw);
                 }
                 button {
-                    width: 250px;
-                    height: 57px;
+                    height: 40%;
+
+                    font-size: calc(0.4em + 0.5vw);
+                    width: 30%;
                     border: 0;
                     background: #FFC633;
                     border-radius: 5px;
@@ -480,4 +513,244 @@
             }
         }
     }
+}
+@media (max-width:1335px){
+    .wrapper{
+        .stick{
+            display: none;
+        }
+        .logo-text{
+            display: none;
+        }
+        .advantage{
+            .data{
+                .data-left{
+                width: 46%;
+                }
+                .data-right{
+                width: 54%;
+                }
+            }
+        }
+        .property{
+            .property-flex{
+                .property-container{
+                    .button-property{
+                        width: 20%;
+                    }
+                    
+                }
+            }
+        }
+
+    }
+    
+        
+    
+}
+@media (max-width:1200px){
+    
+    .wrapper{
+        .header{
+            
+            .wrapper-header{
+                .wrapper-main{
+                    margin: 0;
+                    
+                    
+                    .logo{
+                        min-width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .number{
+                        p{
+                            display: none;
+                        }
+                        img{
+                            width: 60%;
+                        }
+                    }
+                    
+                    .number-call{
+                        display: none;
+                    }
+                    
+                    
+                    
+    
+                }
+            }
+        }
+        .content{
+            background: url('img/image\ 1.png') 0 0/1170px 90% no-repeat;
+            height: 800px;
+            display: block;
+            .content-left{
+                width: 100%;
+                height: 40%;
+            }
+            .content-right{
+                width: 80%;
+                height: 20%;
+                margin: 0 auto;
+            }
+        }
+        
+        .advantage{
+            height: 2600px;
+            .advantage-main{
+                height: 20%;
+                .main-flex{
+                    display: block;
+                    .flex-container{
+                        width: 70%;
+                        margin: 0 auto;
+                        height: 33%;
+                    }
+                }
+            }
+           
+            .property{
+                height: 60%;
+                width: 60%;
+                margin: 0 auto;
+                .property-flex{
+                    height: 50%;
+                    display: block;
+                    margin: 25% 0;
+                    .property-container{
+                        width: 100%;
+                        height: 33%;
+                        .button-property{
+                            width: 50%;
+                            height: 10%;
+                            margin: 0 25%;
+                            font-size: calc(0.4em + 0.5vw);
+                        }
+                        
+                        &.dop{
+                            width: 100%;
+                            background: url(img/Rectangle\ 159.png) 0 0/160% auto no-repeat;
+                            .button-property{
+                                width: 50%;
+                                height: 10%;
+                                margin: 6% 25%;
+                            }
+
+                        }
+                        &.dop2{
+                            width: 100%;
+
+                            background: url(img/Rectangle\ 160.png) 0 0/160% auto no-repeat;
+                            .button-property{
+                                width: 50%;
+                                height: 10%;
+                                margin: 6% 25%;
+                            }
+                            
+                        }
+                        
+                    }
+                    
+                
+                }
+            }
+            .data{
+                height: 20%;
+                display: block;
+                .data-left{
+                    width: 100%;
+                    height: 50%;
+                    .data-left-text{
+                       width: 100%;
+                       height: 70%;
+                        margin: 7% 0;
+                        p{
+                            font-size: calc(0.7em + 0.5vw);
+                        }
+                        
+                    }
+                }
+                .data-right{
+                    width: 100%;
+                    height: 40%;
+                    margin: 0 auto;
+                    .data-left-wrapper{
+                        border-radius: 30px;
+                        gap: 0;
+                        height: 90%;
+                        padding: 0;
+
+                    }
+                }
+            }
+        }
+        .footer{
+            margin: 25% 0;
+            .footer-main{
+                .footer-input{
+                    margin: 0 25%;
+                }
+            }
+        }
+    }
+    
+ 
+
+    
+}
+@media (max-width:1009px){
+    .wrapper{
+        .content{
+            .content-right{
+                .right-text{
+                    font-size: calc(0.5em + 0.5vw);
+                    p{
+                        font-size: calc(0.5em + 0.5vw);
+
+                    }
+                }
+            }
+        }
+        .footer{
+            .footer-main{
+                background: url(img/backg.png) 0 0/2400px 80% no-repeat;
+                .footer-text{
+                    p{
+                        font-size: calc(1.5em + 0.5vw);
+                    }
+                }
+                .footer-input{
+                    margin: 0;
+                    width: 80%;
+                    input{
+                        width: 100%;
+                        height: 20%;
+                    }
+                    button{
+                        width: 70%;
+                        height: 30%;
+
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:401px){
+    .wrapper{
+        .advantage{
+            .property{
+                .property-flex{
+                    button{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+    
+    
 }
