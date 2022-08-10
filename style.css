@@ -5,14 +5,14 @@
 .wrapper .header {
   position: relative;
 }
-.wrapper .header .wrapper-header {
+.wrapper .header .header__elem {
   display: inline-block;
   height: 100%;
   width: 49%;
   margin: 20px 0;
   overflow: hidden;
 }
-.wrapper .header .wrapper-header .wrapper-main {
+.wrapper .header .header__elem .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,30 +21,30 @@
           justify-content: center;
   margin: 0 0px 0 60px;
 }
-.wrapper .header .wrapper-header .wrapper-main .logo {
+.wrapper .header .header__elem .header__container .header__logo {
   height: 100%;
   width: 30%;
   margin: 0 20px;
 }
-.wrapper .header .wrapper-header .wrapper-main .logo-text P {
+.wrapper .header .header__elem .header__container .header__title P {
   width: 371px;
   height: 60px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
-  font-size: calc(1em + 0.5vw);
+  font-size: calc(0.8em + 0.5vw);
   line-height: 30px;
   text-transform: uppercase;
   color: #24173D;
   margin: 0;
 }
-.wrapper .header .wrapper-header .wrapper-main .stick {
+.wrapper .header .header__elem .header__container .stick {
   width: 2px;
   height: 80px;
   margin: 0 10px;
   background: #3B393C;
 }
-.wrapper .header .wrapper-header .wrapper-main .number {
+.wrapper .header .header__elem .header__container .header__number {
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,7 +55,7 @@
   margin: 0 50px;
   padding: 0 10px;
 }
-.wrapper .header .wrapper-header .wrapper-main .number P {
+.wrapper .header .header__elem .header__container .header__number P {
   width: 228px;
   height: 29px;
   font-family: "Montserrat";
@@ -66,7 +66,8 @@
   text-align: center;
   color: #24173D;
 }
-.wrapper .header .wrapper-header .wrapper-main .number-call {
+.wrapper .header .header__elem .header__container .header__button {
+  border: 0;
   width: 40%;
   height: 25%;
   margin: 10px 0;
@@ -76,7 +77,7 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.wrapper .header .wrapper-header .wrapper-main .number-call p {
+.wrapper .header .header__elem .header__container .header__button p {
   margin: 10px auto;
   width: 158px;
   height: 25px;
@@ -96,7 +97,7 @@
   -ms-flex-positive: 0;
       flex-grow: 0;
 }
-.wrapper .content {
+.wrapper .about {
   height: 600px;
   position: relative;
   display: -webkit-box;
@@ -104,15 +105,15 @@
   display: flex;
   background: url("img/image 1.png") 0 0/1910px 525px no-repeat;
 }
-.wrapper .content .content-left {
+.wrapper .about .about__text {
   height: 75%;
   width: 50%;
 }
-.wrapper .content .content-left hr {
+.wrapper .about .about__text hr {
   width: 40%;
   margin: 0 15%;
 }
-.wrapper .content .content-left .left-text {
+.wrapper .about .about__text .about__top {
   width: 80%;
   height: 50%;
   font-family: "Montserrat";
@@ -123,16 +124,16 @@
   color: #FFFFFF;
   overflow: hidden;
 }
-.wrapper .content .content-left .left-text .left-text-dop {
+.wrapper .about .about__text .about__top .about__title {
   height: 30%;
   font-weight: bold;
   font-size: calc(1.5em + 0.5vw);
 }
-.wrapper .content .content-left .left-text .left-text-content {
+.wrapper .about .about__text .about__top .about__description {
   height: 40%;
   font-size: calc(1em + 0.5vw);
 }
-.wrapper .content .content-left .left-text-under {
+.wrapper .about .about__text .about__under {
   font-family: "Montserrat";
   font-style: normal;
   font-size: calc(1em + 0.5vw);
@@ -140,11 +141,11 @@
   color: #FFFFFF;
   margin: 15px auto;
 }
-.wrapper .content .content-left .left-text-under .left-text-dop {
+.wrapper .about .about__text .about__under .about__title {
   font-weight: bold;
   font-size: calc(1.5em + 0.5vw);
 }
-.wrapper .content .content-right {
+.wrapper .about .about__form {
   width: 690px;
   height: 300px;
   margin: auto auto;
@@ -154,7 +155,7 @@
           box-shadow: 10px 25px 45px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
-.wrapper .content .content-right .right-text {
+.wrapper .about .about__form .about__title_black {
   margin: 50px auto;
   width: 70%;
   text-align: center;
@@ -166,13 +167,13 @@
   text-transform: uppercase;
   color: #24173D;
 }
-.wrapper .content .content-right .right-text p {
+.wrapper .about .about__form .about__title_black p {
   font-size: 18px;
 }
-.wrapper .content .content-right .right-form {
+.wrapper .about .about__form .about__input {
   text-align: center;
 }
-.wrapper .content .content-right .right-form input {
+.wrapper .about .about__form .about__input input {
   width: 30%;
   height: 40%;
   background: #FFFFFF;
@@ -184,13 +185,13 @@
   line-height: 23px;
   color: #5C5C5C;
 }
-.wrapper .content .content-right .button {
+.wrapper .about .about__form .about__button {
   width: 235px;
   height: 32px;
   margin: 10px auto;
   color: white;
 }
-.wrapper .content .content-right .button .right-text-under {
+.wrapper .about .about__form .about__button button {
   width: 100%;
   height: 100%;
   color: #FFFFFF;
@@ -204,16 +205,16 @@
           box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
   border-radius: 43px;
 }
-.wrapper .advantage {
+.wrapper .content {
   height: 1600px;
   width: 99%;
   position: relative;
 }
-.wrapper .advantage .advantage-text {
+.wrapper .content .advantage-text {
   width: 100px;
   height: 5%;
 }
-.wrapper .advantage .advantage-main {
+.wrapper .content .form {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 5% auto;
@@ -222,7 +223,7 @@
   height: 20%;
   width: 70%;
 }
-.wrapper .advantage .advantage-main .main-flex {
+.wrapper .content .form .content__container-flex {
   margin: 30px auto;
   height: 40%;
   width: 100%;
@@ -233,7 +234,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.wrapper .advantage .advantage-main .main-flex .flex-container {
+.wrapper .content .form .content__container-flex .form__item {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -241,12 +242,12 @@
   height: 100%;
   width: 33%;
 }
-.wrapper .advantage .advantage-main .main-flex .flex-container img {
+.wrapper .content .form .content__container-flex .form__item img {
   min-width: 50%;
   height: 50%;
   margin: auto;
 }
-.wrapper .advantage .advantage-main .main-flex .flex-container p {
+.wrapper .content .form .content__container-flex .form__item p {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -256,11 +257,11 @@
   color: #24173D;
   margin: auto;
 }
-.wrapper .advantage .property {
+.wrapper .content .catalog {
   width: 100%;
   height: 50%;
 }
-.wrapper .advantage .property .property-flex {
+.wrapper .content .catalog .catalog__container {
   height: 37%;
   width: 100%;
   display: -webkit-box;
@@ -270,17 +271,17 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.wrapper .advantage .property .property-flex .property-container {
+.wrapper .content .catalog .catalog__container .catalog__item {
   position: relative;
   height: 100%;
   width: 33.3%;
 }
-.wrapper .advantage .property .property-flex .property-container .property-container-p {
+.wrapper .content .catalog .catalog__container .catalog__item .catalog__p {
   margin: 10% auto;
   width: 70%;
   height: 30%;
 }
-.wrapper .advantage .property .property-flex .property-container p {
+.wrapper .content .catalog .catalog__container .catalog__item p {
   bottom: 0;
   left: 0;
   right: 0;
@@ -293,7 +294,7 @@
   letter-spacing: 0.05em;
   color: #FFFFFF;
 }
-.wrapper .advantage .property .property-flex .property-container .button-property {
+.wrapper .content .catalog .catalog__container .catalog__item .catalog__button {
   width: 70%;
   height: 15%;
   margin: 0 15%;
@@ -322,48 +323,37 @@
   left: 0;
   right: 0;
 }
-.wrapper .advantage .property .property-flex .property-container.dop {
+.wrapper .content .catalog .catalog__container .catalog__item.catalog__item_large {
   margin: 0 5px;
   width: 49.99%;
-  background: url(img/Rectangle\ 159.png) 0 0/100% auto no-repeat;
 }
-.wrapper .advantage .property .property-flex .property-container.dop .property-container-p {
+.wrapper .content .catalog .catalog__container .catalog__item.catalog__item_large .catalog__p {
   height: 15%;
 }
-.wrapper .advantage .property .property-flex .property-container.dop .button-property {
+.wrapper .content .catalog .catalog__container .catalog__item.catalog__item_large .catalog__button {
   margin: 0 15%;
 }
-.wrapper .advantage .property .property-flex .property-container.dop2 {
-  width: 49.99%;
-  background: url(img/Rectangle\ 160.png) 0 0/100% auto no-repeat;
-}
-.wrapper .advantage .property .property-flex .property-container.dop2 .property-container-p {
-  height: 15%;
-}
-.wrapper .advantage .property .property-flex .property-container.dop2 .button-property {
-  margin: 0 15%;
-}
-.wrapper .advantage .data {
+.wrapper .content .data {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   width: 100%;
   height: 25%;
 }
-.wrapper .advantage .data .data-left {
+.wrapper .content .data .data__text {
   width: 50%;
   height: 75%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
-.wrapper .advantage .data .data-left .data-left-stick {
+.wrapper .content .data .data__text .data__stick {
   width: 5px;
   height: 210px;
   margin: auto 30px;
   background: #24173D;
 }
-.wrapper .advantage .data .data-left .data-left-text p {
+.wrapper .content .data .data__text .data__description p {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 900;
@@ -373,11 +363,11 @@
   color: #24173D;
   margin: auto 30px;
 }
-.wrapper .advantage .data .data-right {
+.wrapper .content .data .data__form {
   width: 50%;
   height: 75%;
 }
-.wrapper .advantage .data .data-right .data-left-wrapper {
+.wrapper .content .data .data__form .data__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,11 +385,11 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px 0px 0px 30px;
 }
-.wrapper .advantage .data .data-right .data-left-wrapper .data-left-container {
+.wrapper .content .data .data__form .data__container .data__item {
   height: 100%;
   width: 33.33%;
 }
-.wrapper .advantage .data .data-right .data-left-wrapper .data-left-container .left-container-text p {
+.wrapper .content .data .data__form .data__container .data__item .data__title p {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -409,7 +399,7 @@
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.wrapper .advantage .data .data-right .data-left-wrapper .data-left-container .percent p {
+.wrapper .content .data .data__form .data__container .data__item .data__percent p {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
@@ -418,7 +408,7 @@
   color: #24173D;
   text-align: center;
 }
-.wrapper .advantage .data .data-right .data-left-wrapper .data-left-container .left-container-text-under p {
+.wrapper .content .data .data__form .data__container .data__item .data__title p {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -431,16 +421,16 @@
 .wrapper .footer {
   width: 100%;
 }
-.wrapper .footer .footer-main {
+.wrapper .footer .footer__container {
   height: 420px;
   width: 100%;
   background: url(img/backg.png) 0 0/2400px 190% no-repeat;
 }
-.wrapper .footer .footer-main .footer-text {
+.wrapper .footer .footer__container .footer__text {
   height: 50%;
   margin: 0 auto;
 }
-.wrapper .footer .footer-main .footer-text p {
+.wrapper .footer .footer__container .footer__text p {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -448,7 +438,7 @@
   text-align: center;
   color: #FFFFFF;
 }
-.wrapper .footer .footer-main .footer-input {
+.wrapper .footer .footer__container .footer__contact-form {
   width: 50%;
   height: 30%;
   display: -webkit-inline-box;
@@ -456,7 +446,7 @@
   display: inline-flex;
   margin: 3% 25%;
 }
-.wrapper .footer .footer-main .footer-input input {
+.wrapper .footer .footer__container .footer__contact-form input {
   height: 40%;
   background: #FFFFFF;
   border-radius: 5px;
@@ -466,7 +456,7 @@
   margin: 0 20px;
   font-size: calc(0.4em + 0.5vw);
 }
-.wrapper .footer .footer-main .footer-input button {
+.wrapper .footer .footer__container .footer__contact-form button {
   height: 40%;
   font-size: calc(0.4em + 0.5vw);
   width: 30%;
@@ -474,7 +464,7 @@
   background: #FFC633;
   border-radius: 5px;
 }
-.wrapper .footer .footer-main .footer-input button .footer-input button p {
+.wrapper .footer .footer__container .footer__contact-form button .footer__contact-form button p {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -484,26 +474,26 @@
   text-transform: uppercase;
   color: #24173D;
 }
-.wrapper .footer .footer-under {
+.wrapper .footer .footer__conainer-under {
   height: 50%;
   width: 100%;
 }
-.wrapper .footer .footer-under .footer-logo {
+.wrapper .footer .footer__conainer-under .footer__logo {
   width: 30%;
   height: 70%;
   margin: 50px auto;
 }
-.wrapper .footer .footer-under .footer-logo img {
+.wrapper .footer .footer__conainer-under .footer__logo img {
   width: 100%;
   height: 50%;
 }
-.wrapper .footer .footer-under .footer-under-text {
+.wrapper .footer .footer__conainer-under .footer__text-under {
   width: 30%;
   height: 30%;
   margin: 0 auto;
   text-align: center;
 }
-.wrapper .footer .footer-under .footer-under-text .footer-under-text p {
+.wrapper .footer .footer__conainer-under .footer__text-under .footer__text-under p {
   font-family: "Century Gothic";
   font-style: normal;
   font-weight: 400;
@@ -512,7 +502,7 @@
   text-align: center;
   color: #4A4A4A;
 }
-.wrapper .footer .footer-under .footer-under-text .span-footer {
+.wrapper .footer .footer__conainer-under .footer__text-under .span-footer {
   color: #F8B500;
 }
 
@@ -520,126 +510,116 @@
   .wrapper .stick {
     display: none;
   }
-  .wrapper .logo-text {
+  .wrapper .header__title {
     display: none;
   }
-  .wrapper .advantage .data .data-left {
+  .wrapper .content .data .data__text {
     width: 46%;
   }
-  .wrapper .advantage .data .data-right {
+  .wrapper .content .data .data__form {
     width: 54%;
   }
-  .wrapper .property .property-flex .property-container .button-property {
+  .wrapper .catalog .catalog__container .catalog__item .catalog__button {
     width: 20%;
   }
 }
 @media (max-width: 1200px) {
-  .wrapper .header .wrapper-header .wrapper-main {
+  .wrapper .header .header__elem .header__container {
     margin: 0;
   }
-  .wrapper .header .wrapper-header .wrapper-main .logo {
+  .wrapper .header .header__elem .header__container .header__logo {
     min-width: 100%;
   }
-  .wrapper .header .wrapper-header .wrapper-main .logo img {
+  .wrapper .header .header__elem .header__container .header__logo img {
     width: 100%;
   }
-  .wrapper .header .wrapper-header .wrapper-main .number p {
+  .wrapper .header .header__elem .header__container .header__number p {
     display: none;
   }
-  .wrapper .header .wrapper-header .wrapper-main .number img {
+  .wrapper .header .header__elem .header__container .header__number img {
     width: 60%;
   }
-  .wrapper .header .wrapper-header .wrapper-main .number-call {
+  .wrapper .header .header__elem .header__container .header__button {
     display: none;
   }
-  .wrapper .content {
+  .wrapper .about {
     background: url("img/image 1.png") 0 0/1170px 90% no-repeat;
     height: 800px;
     display: block;
   }
-  .wrapper .content .content-left {
+  .wrapper .about .about__text {
     width: 100%;
     height: 40%;
   }
-  .wrapper .content .content-right {
+  .wrapper .about .about__form {
     width: 80%;
     height: 20%;
     margin: 0 auto;
   }
-  .wrapper .advantage {
+  .wrapper .content {
     height: 2600px;
   }
-  .wrapper .advantage .advantage-main {
+  .wrapper .content .form {
     height: 20%;
   }
-  .wrapper .advantage .advantage-main .main-flex {
+  .wrapper .content .form .content__container-flex {
     display: block;
   }
-  .wrapper .advantage .advantage-main .main-flex .flex-container {
+  .wrapper .content .form .content__container-flex .form__item {
     width: 70%;
     margin: 0 auto;
     height: 33%;
   }
-  .wrapper .advantage .property {
+  .wrapper .content .catalog {
     height: 60%;
     width: 60%;
     margin: 0 auto;
   }
-  .wrapper .advantage .property .property-flex {
+  .wrapper .content .catalog .catalog__container {
     height: 50%;
     display: block;
     margin: 25% 0;
   }
-  .wrapper .advantage .property .property-flex .property-container {
+  .wrapper .content .catalog .catalog__container .catalog__item {
     width: 100%;
     height: 33%;
   }
-  .wrapper .advantage .property .property-flex .property-container .button-property {
+  .wrapper .content .catalog .catalog__container .catalog__item .catalog__button {
     width: 50%;
     height: 10%;
     margin: 0 25%;
     font-size: calc(0.4em + 0.5vw);
   }
-  .wrapper .advantage .property .property-flex .property-container.dop {
+  .wrapper .content .catalog .catalog__container .catalog__item.catalog__item_large {
     width: 100%;
-    background: url(img/Rectangle\ 159.png) 0 0/160% auto no-repeat;
   }
-  .wrapper .advantage .property .property-flex .property-container.dop .button-property {
+  .wrapper .content .catalog .catalog__container .catalog__item.catalog__item_large .catalog__button {
     width: 50%;
     height: 10%;
     margin: 6% 25%;
   }
-  .wrapper .advantage .property .property-flex .property-container.dop2 {
-    width: 100%;
-    background: url(img/Rectangle\ 160.png) 0 0/160% auto no-repeat;
-  }
-  .wrapper .advantage .property .property-flex .property-container.dop2 .button-property {
-    width: 50%;
-    height: 10%;
-    margin: 6% 25%;
-  }
-  .wrapper .advantage .data {
+  .wrapper .content .data {
     height: 20%;
     display: block;
   }
-  .wrapper .advantage .data .data-left {
+  .wrapper .content .data .data__text {
     width: 100%;
     height: 50%;
   }
-  .wrapper .advantage .data .data-left .data-left-text {
+  .wrapper .content .data .data__text .data__description {
     width: 100%;
     height: 70%;
     margin: 7% 0;
   }
-  .wrapper .advantage .data .data-left .data-left-text p {
+  .wrapper .content .data .data__text .data__description p {
     font-size: calc(0.7em + 0.5vw);
   }
-  .wrapper .advantage .data .data-right {
+  .wrapper .content .data .data__form {
     width: 100%;
     height: 40%;
     margin: 0 auto;
   }
-  .wrapper .advantage .data .data-right .data-left-wrapper {
+  .wrapper .content .data .data__form .data__container {
     border-radius: 30px;
     gap: 0;
     height: 90%;
@@ -648,38 +628,38 @@
   .wrapper .footer {
     margin: 25% 0;
   }
-  .wrapper .footer .footer-main .footer-input {
+  .wrapper .footer .footer__container .footer__contact-form {
     margin: 0 25%;
   }
 }
 @media (max-width: 1009px) {
-  .wrapper .content .content-right .right-text {
+  .wrapper .about .about__form .about__title_black {
     font-size: calc(0.5em + 0.5vw);
   }
-  .wrapper .content .content-right .right-text p {
+  .wrapper .about .about__form .about__title_black p {
     font-size: calc(0.5em + 0.5vw);
   }
-  .wrapper .footer .footer-main {
+  .wrapper .footer .footer__container {
     background: url(img/backg.png) 0 0/2400px 80% no-repeat;
   }
-  .wrapper .footer .footer-main .footer-text p {
+  .wrapper .footer .footer__container .footer__text p {
     font-size: calc(1.5em + 0.5vw);
   }
-  .wrapper .footer .footer-main .footer-input {
+  .wrapper .footer .footer__container .footer__contact-form {
     margin: 0;
     width: 80%;
   }
-  .wrapper .footer .footer-main .footer-input input {
+  .wrapper .footer .footer__container .footer__contact-form input {
     width: 100%;
     height: 20%;
   }
-  .wrapper .footer .footer-main .footer-input button {
+  .wrapper .footer .footer__container .footer__contact-form button {
     width: 70%;
     height: 30%;
   }
 }
 @media (max-width: 401px) {
-  .wrapper .advantage .property .property-flex button {
+  .wrapper .content .catalog .catalog__container button {
     width: 50%;
   }
 }
